@@ -1,5 +1,5 @@
 {
-  "name": "blur_admin",
+  "name": "brainpal_dashboard",
   "version": "1.3.1",
   "devDependencies": {
     "browser-sync": "~2.18.2",
