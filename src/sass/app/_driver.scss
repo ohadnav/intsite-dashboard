@@ -1,0 +1,231 @@
+#driver-recommendations {
+  ul.nav {
+    box-shadow : 0 2px 4px rgba(60, 60, 60, 0.3);
+    a {
+      transition : all .2s ease;
+    }
+    li {
+      uib-tab-heading {
+        span {
+          font-weight    : $font-thin;
+          font-size      : 18px;
+          text-transform : capitalize;
+          transition     : all .2s ease;
+        }
+        i {
+          font-size    : x-large;
+          margin-right : 15px;
+        }
+        display     : flex;
+        align-items : center;
+      }
+
+      width         : 50%;
+      border-radius : 5px 0 0 0;
+      &.active {
+        uib-tab-heading {
+          span {
+            font-weight : $font-light;
+          }
+        }
+        a {
+          font-weight : $font-normal;
+          box-shadow  : 1px 0 3px rgba(60, 60, 60, 0.2);
+        }
+      }
+      &:hover {
+        &.active a {
+          background-color : rgba(38, 165, 150, 0.7);
+          box-shadow       : 1px 0 3px rgba(60, 60, 60, 0.1);
+        }
+        a {
+          background-color : rgba(64, 181, 162, 0.9);
+        }
+        uib-tab-heading {
+          span {
+            font-weight : $font-light;
+          }
+        }
+      }
+    }
+    li:last-child {
+      a {
+        border-radius : 0 5px 0 0;
+      }
+      &.active {
+        a {
+          box-shadow : -1px 0 3px rgba(60, 60, 60, 0.2);
+        }
+      }
+    }
+  }
+  .nav-link {
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    padding         : 0;
+    height          : 42px;
+  }
+
+  .driver-recommendation {
+    .driver-bg, .driver-overlay, .driver-analysis {
+      position      : absolute;
+      top           : 42px;
+      left          : 0;
+      border-radius : 0 0 5px 5px;
+      overflow      : hidden;
+    }
+    .driver-overlay, .driver-analysis {
+      height : calc(100% - 42px);
+      width  : 100%;
+    }
+    .driver-bg {
+      height     : calc(100% - 42px);
+      width      : 100%;
+      object-fit : cover;
+    }
+    .driver-overlay {
+      background-color : rgba(0, 0, 0, 0.6);
+      transition       : background-color .5s ease;
+    }
+    &:hover {
+      .driver-overlay {
+        background-color : rgba(0, 0, 0, 0.1);
+      }
+      .driver-experiment {
+        .driver-targets {
+          border-radius    : 5px;
+          padding          : 10px 10px 0 10px;
+          background-color : rgba(20, 20, 20, 0.6);
+        }
+      }
+      .driver-explaination {
+        background-color : rgba(20, 20, 20, 0.6);
+      }
+    }
+    z-index : -1;
+  }
+  .driver-experiment .driver-targets, .driver-explaination {
+    transition     : all .5s ease;
+    letter-spacing : 0.2px;
+    font-weight    : $font-thin;
+    text-shadow    : 1px 1px 4px rgba(200, 200, 200, 0.8);
+    color          : whitesmoke;
+  }
+  .driver-analysis {
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    .driver-explaination {
+      width         : 60%;
+      font-size     : 22px;
+      line-height   : 26px;
+      padding       : 10px;
+      border-radius : 5px;
+    }
+  }
+  .driver-experiment {
+    .driver-targets {
+      font-size : 18px;
+      position  : absolute;
+      bottom    : 10px;
+      left      : 20px;
+      ul {
+        font-size       : 16px;
+        margin-top      : 5px;
+        list-style-type : none;
+        padding         : 0;
+        li {
+          margin-top : 6px;
+          i {
+            width         : 20px;
+            font-size     : 18px;
+            padding-right : 5px;
+          }
+        }
+        li:first-child {
+          i {
+            width : 30px;
+          }
+        }
+      }
+    }
+  }
+  .driver-experiment, .driver-analysis {
+    button {
+      border         : none;
+      box-shadow     : 2px 2px 6px rgba(50, 50, 50, 0.7);
+      padding        : 4px 0 4px 8px;
+      display        : flex;
+      align-items    : center;
+      font-weight    : $font-light;
+      font-size      : larger;
+      text-transform : uppercase;
+      position       : absolute;
+      bottom         : 20px;
+      right          : 30px;
+      i {
+        margin-left : 10px;
+        font-size   : x-large;
+      }
+    }
+    @-moz-document url-prefix() {
+      button {
+        display : inline-block;
+      }
+    }
+  }
+  .driver-top {
+    .driver-experiment, .driver-analysis {
+      button {
+        bottom : auto;
+        top    : 65px;
+      }
+    }
+    @media screen and (min-color-index : 0) and (-webkit-min-device-pixel-ratio : 0) {
+      .driver-analysis button {
+        top : 23px;
+      }
+    }
+  }
+  .driver-experiment {
+    .driver-targets {
+      bottom : auto;
+      top    : 60px;
+    }
+  }
+}
+
+@media only screen and (max-width : $resXS) {
+  #driver-recommendations {
+    .driver-experiment .driver-targets {
+      bottom : auto;
+      top    : 60px;
+    }
+    .driver-experiment, .driver-analysis {
+      button {
+        right : auto;
+        left  : 20px;
+      }
+      @media screen and (min-color-index : 0) and (-webkit-min-device-pixel-ratio : 0) {
+        button {
+          max-width: 120px;
+        }
+      }
+    }
+    .driver-top {
+      .driver-experiment, .driver-analysis {
+        button {
+          bottom : 20px;
+          top    : auto;
+        }
+      }
+    }
+    .driver-analysis .driver-explaination {
+      width : 80%;
+    }
+    ul.nav a li uib-tab-heading span {
+      font-size : 16px;
+    }
+  }
+}

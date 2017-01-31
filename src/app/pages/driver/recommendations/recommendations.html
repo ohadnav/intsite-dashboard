@@ -1,0 +1,56 @@
+<div class = 'row' id = 'driver-recommendations'>
+  <div ng-repeat = 'recommendation in recommendations track by $index'>
+    <div class = 'col-xlg-4 col-md-6 col-sm-12'>
+      <div id = 'recommendation-{{$index}}' class = 'driver-recommendation {{::recommendation.showTop ? "driver-top" : ""}}'
+           ba-panel
+           ba-panel-class = 'with-scroll horizontal-tabs tabs-panel medium-panel'>
+        <img class = 'driver-bg' ng-src='{{::(recommendation.imgSrc | experimentAfter)}}'>
+        <div class = 'driver-overlay'></div>
+        <uib-tabset active = '$tabSetStatus.activeTab'>
+          <uib-tab>
+            <uib-tab-heading>
+              <i class = 'ion-erlenmeyer-flask'></i>
+              <span>Experiment</span>
+            </uib-tab-heading>
+            <div class = 'driver-experiment'>
+              <div class = 'driver-targets'>
+                <span>Target Audience:</span>
+                <ul>
+                  <li>
+                    <i class = 'ion-earth'></i>
+                    {{::(recommendation.locale | experimentLocale)}}
+                  </li>
+                  <li ng-if = 'recommendation.source'>
+                    <i class = 'fa fa-{{::recommendation.source}}'></i>
+                    From {{::(recommendation.source | experimentSource)}}
+                  </li>
+                  <li ng-if = 'recommendation.state'>
+                    <i class = 'fa fa-{{::(recommendation.state | experimentStateIcon)}}'></i>
+                    {{::(recommendation.state | experimentStateText)}}
+                  </li>
+                </ul>
+              </div>
+              <button type = 'button' class = 'btn btn-danger btn-with-icon'>
+                Launch<i class = 'fa fa-space-shuttle'></i>
+              </button>
+            </div>
+          </uib-tab>
+          <uib-tab>
+            <uib-tab-heading>
+              <i class = 'ion-ios-search'></i>
+              <span>Analysis</span>
+            </uib-tab-heading>
+            <div class = 'driver-analysis'>
+              <div class = 'driver-explaination' ng-if='recommendation.analysis'>
+                {{::recommendation.analysis}}
+              </div>
+              <button type = 'button' class = 'btn btn-danger btn-with-icon'>
+                Launch<i class = 'fa fa-space-shuttle'></i>
+              </button>
+            </div>
+          </uib-tab>
+        </uib-tabset>
+      </div>
+    </div>
+  </div>
+</div>

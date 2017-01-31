@@ -1,4 +1,3 @@
-$sidebar-width: 180px;
 $angle-left: "\f100";
 $angle-right: "\f101";
 
@@ -12,6 +11,7 @@ $angle-right: "\f101";
   background-color: $sidebar;
   height: 100%;
   position: fixed;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.5);
 }
 
 .al-sidebar-list {
@@ -35,14 +35,24 @@ $angle-right: "\f101";
   position: relative;
   float: none;
   padding: 0;
+  transition: all .5s ease;
   &.selected:not(.with-sub-menu) {
     background-color: $primary;
+    box-shadow: 0 2px 6px rgba(150,150,150,0.6);
     a.al-sidebar-list-link {
       color: $sidebar-text;
       b {
         color: $sidebar-text;
       }
     }
+  }
+  &:hover:not(.with-sub-menu) {
+    background-color: rgba(190,190,190,0.2);
+    box-shadow: 0 2px 6px rgba(160,160,160,0.2);
+  }
+  &.selected:hover:not(.with-sub-menu) {
+    background-color: rgba(42,170,155,0.5);
+    box-shadow: 0 2px 6px rgba(150,150,150,0.6);
   }
 }
 
@@ -65,7 +75,9 @@ a.al-sidebar-list-link {
   height: 42px;
   padding-left: 18px;
   text-shadow: none;
-  font-size: 13px;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  font-weight: $font-light;;
   text-decoration: none;
   color: $sidebar-text;
   line-height: 42px;
@@ -79,8 +91,10 @@ a.al-sidebar-list-link {
     }
   }
   i {
+    transition: all 0.2s ease;
     margin-right: 18px;
     width: 16px;
+    font-size: 20px;
     display: inline-block;
   }
   b {
@@ -88,9 +102,10 @@ a.al-sidebar-list-link {
     opacity: 1;
     width: 14px;
     height: 14px;
-    line-height: 14px;
+    line-height: 20px;
     text-shadow: none;
     font-size: 18px;
+    font-weight: $font-thin;;
     position: absolute;
     right: 10px;
     top: 12px;
@@ -98,6 +113,13 @@ a.al-sidebar-list-link {
     text-align: center;
     color: $sidebar-text;
     transition: transform 0.2s linear;
+  }
+}
+
+.al-sidebar-list-item:last-child a.al-sidebar-list-link {
+  padding-left: 13px;
+  i {
+    margin-right: 23px;
   }
 }
 
@@ -135,6 +157,7 @@ a.al-sidebar-list-link {
       display: block;
       text-shadow: none;
       font-size: 13px;
+      font-weight: $font-thin;;
       text-decoration: none;
       color: $sidebar-text;
       padding-left: 52px;
@@ -182,6 +205,22 @@ a.al-sidebar-list-link {
 
     .fa-angle-down, .fa-angle-up {
       opacity: 0;
+    }
+
+    a.al-sidebar-list-link {
+      padding-left: 18px;
+      i {
+        margin-right: 23px;
+        transition: all 0.2s ease;
+        font-size: 24px;
+      }
+    }
+
+    .al-sidebar-list-item:last-child a.al-sidebar-list-link {
+      padding-left: 13px;
+      i {
+        margin-right: 28px;
+      }
     }
 
     .al-sidebar-sublist {

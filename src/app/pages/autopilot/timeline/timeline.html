@@ -1,0 +1,40 @@
+<section id = 'cd-timeline' class = 'cd-container cssanimations'>
+  <div class = 'cd-timeline-block' ng-repeat = 'experiment in experiments track by $index'>
+    <div class = 'cd-timeline-icon is-hidden'>
+      <div class = 'kameleon-icon with-round-bg {{ ::experiment.colorClass }}'>
+        <img ng-src = '{{::( experiment.icon | kameleonImg )}}'>
+      </div>
+    </div>
+
+    <div class = 'cd-timeline-content is-hidden {{ ::experiment.colorClass }}'>
+      <div class='cd-uplift' ng-if='experiment.uplift'>
+        <i class='ion-arrow-up-c'></i>
+        <span>{{ ::experiment.uplift }}%</span>
+      </div>
+      <h2>{{ ::experiment.title }}</h2>
+
+      <p>{{ ::experiment.description }}</p>
+      <div class = 'cd-before-after-container'>
+        <div class = 'cd-img-section cd-before'>
+          <p>Before</p>
+          <div class = 'cd-img-container'>
+            <img class='cd-img' ng-src = '{{ ::( experiment.beforeSrc | experimentBefore ) }}'>
+            <div class = 'cd-img-overlay'></div>
+          </div>
+        </div>
+        <i class = 'fa fa-space-shuttle cd-before' aria-hidden = 'true'></i>
+        <div class = 'cd-img-section cd-after'>
+          <p>After</p>
+          <div class = 'cd-img-container'>
+            <img class='cd-img' ng-src = '{{ ::( experiment.afterSrc | experimentAfter ) }}'>
+            <img class='cd-logo' src='http://brainpal.io/images/logo.png'>
+            <div class = 'cd-img-overlay'></div>
+          </div>
+        </div>
+      </div>
+      <div class = 'cd-info'>
+        <span class='cd-date'>{{ ::(experiment.startDate | timelineDate) }} - {{ ::(experiment.endDate | timelineDate) }}</span>
+      </div>
+    </div>
+  </div>
+</section>
