@@ -19,7 +19,7 @@
     // 'BrainPal.pages.maps',
     // 'BrainPal.pages.profile',
   ])
-      .config(routeConfig);
+         .config(routeConfig);
 
   /** @ngInject */
   function routeConfig($urlRouterProvider, baSidebarServiceProvider) {

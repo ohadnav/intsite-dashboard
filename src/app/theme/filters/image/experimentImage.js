@@ -9,7 +9,7 @@
 
   /** @ngInject */
   function beforeImage(layoutPaths) {
-    return function(input) {
+    return function (input) {
       input = input || 'defaultBefore.jpg';
       return layoutPaths.images.experiments + input;
     };
@@ -20,7 +20,7 @@
 
   /** @ngInject */
   function afterImage(layoutPaths) {
-    return function(input) {
+    return function (input) {
       input = input || 'defaultAfter.jpg';
       return layoutPaths.images.experiments + input;
     };

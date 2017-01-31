@@ -12,11 +12,11 @@ var gutil = require('gulp-util');
  *  The main paths of your project handle these with care
  */
 exports.paths = {
-  src: 'src',
-  dist: 'release',
+  src    : 'src',
+  dist   : 'release',
   devDist: 'dev-release',
-  tmp: '.tmp',
-  e2e: 'e2e'
+  tmp    : '.tmp',
+  e2e    : 'e2e'
 };
 
 /**
@@ -25,17 +25,17 @@ exports.paths = {
  *  to inject css preprocessor deps and js files in karma
  */
 exports.wiredep = {
-  exclude: [/\/bootstrap\.js$/, /\/bootstrap-sass\/.*\.js/, /\/require\.js/],
+  exclude  : [/\/bootstrap\.js$/, /\/bootstrap-sass\/.*\.js/, /\/require\.js/],
   directory: 'bower_components'
 };
 
 /**
  *  Common implementation for an error handler of a Gulp plugin
  */
-exports.errorHandler = function(title) {
+exports.errorHandler = function (title) {
   'use strict';
 
-  return function(err) {
+  return function (err) {
     gutil.log(gutil.colors.red('[' + title + ']'), err.toString());
     this.emit('end');
   };

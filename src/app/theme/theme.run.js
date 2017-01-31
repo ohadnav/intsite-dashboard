@@ -6,10 +6,11 @@
   'use strict';
 
   angular.module('BrainPal.theme')
-    .run(themeRun);
+         .run(themeRun);
 
   /** @ngInject */
-  function themeRun($timeout, $rootScope, layoutPaths, preloader, $q, baSidebarService, themeLayoutSettings) {
+  function themeRun(
+    $timeout, $rootScope, layoutPaths, preloader, $q, baSidebarService, themeLayoutSettings) {
     var whatToWait = [
       preloader.loadAmCharts(),
       $timeout(3000)

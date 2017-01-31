@@ -6,7 +6,7 @@
   'use strict';
 
   angular.module('BrainPal.theme')
-    .config(config);
+         .config(config);
 
   /** @ngInject */
   function config(baConfigProvider, colorHelper, $provide) {

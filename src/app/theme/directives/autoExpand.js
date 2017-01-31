@@ -5,13 +5,13 @@
   'use strict';
 
   angular.module('BrainPal.theme')
-      .directive('autoExpand', autoExpand);
+         .directive('autoExpand', autoExpand);
 
   /** @ngInject */
   function autoExpand() {
     return {
       restrict: 'A',
-      link: function ($scope, elem) {
+      link    : function ($scope, elem) {
         elem.bind('keydown', function ($event) {
           var element = $event.target;
           $(element).height(0);

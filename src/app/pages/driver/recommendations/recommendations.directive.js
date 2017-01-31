@@ -10,8 +10,8 @@
   /** @ngInject */
   function recommendations() {
     return {
-      restrict: 'E',
-      controller: 'RecommendationsCtrl',
+      restrict   : 'E',
+      controller : 'RecommendationsCtrl',
       templateUrl: 'app/pages/driver/recommendations/recommendations.html'
     };
   }

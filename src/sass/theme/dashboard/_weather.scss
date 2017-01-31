@@ -1,79 +1,78 @@
 .weather-wrapper {
-
-  height: 100%;
+  height : 100%;
 
   .weather-main-info {
-    min-height: 140px;
+    min-height : 140px;
 
     div i {
-      display: inline-block;
-      width: 48px;
-      text-align: center;
+      display    : inline-block;
+      width      : 48px;
+      text-align : center;
     }
 
     .city-date {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      display         : flex;
+      flex-wrap       : wrap;
+      justify-content : space-between;
     }
   }
 
   .temp-by-time {
-    height: calc(100% - 210px);
+    height : calc(100% - 210px);
   }
 
   .select-day {
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-    height: 70px;
+    display      : table;
+    table-layout : fixed;
+    width        : 100%;
+    height       : 70px;
 
     .day {
-      display: table-cell;
-      line-height: 1;
-      text-align: center;
-      cursor: pointer;
+      display     : table-cell;
+      line-height : 1;
+      text-align  : center;
+      cursor      : pointer;
 
       i.weatherIcon {
-        transition: color 0.5s ease;
+        transition : color 0.5s ease;
       }
 
       .select-day-info {
-        vertical-align: super;
+        vertical-align : super;
       }
     }
 
     .day:hover {
       i.weatherIcon {
-        color: #40BDE8;
+        color : #40BDE8;
       }
     }
   }
 
   .rightHeading {
-    display: block;
-    float: right;
+    display : block;
+    float   : right;
   }
 
   .weather-info {
-    display: inline-block;
-    vertical-align: super;
+    display        : inline-block;
+    vertical-align : super;
   }
 
   .font-x1dot25 {
-    font-size: 1.5em;
+    font-size : 1.5em;
   }
 
   .font-x1dot5 {
-    font-size: 1.5em;
+    font-size : 1.5em;
   }
 
   .font-x2 {
-    font-size: 2em;
+    font-size : 2em;
   }
 
   .font-x3 {
-    font-size: 3em;
+    font-size : 3em;
   }
 
 }

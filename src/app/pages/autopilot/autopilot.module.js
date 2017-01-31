@@ -6,19 +6,19 @@
   'use strict';
 
   angular.module('BrainPal.pages.autopilot', [])
-    .config(routeConfig);
+         .config(routeConfig);
 
   /** @ngInject */
   function routeConfig($stateProvider) {
     $stateProvider
       .state('autopilot', {
-        url: '/autopilot',
+        url        : '/autopilot',
         templateUrl: 'app/pages/autopilot/autopilot.html',
-          title: 'Autopilot',
-          sidebarMeta: {
-            icon: 'ion-jet',
-            order: 50,
-          },
+        title      : 'Autopilot',
+        sidebarMeta: {
+          icon : 'ion-jet',
+          order: 50,
+        },
       });
   }
 })();

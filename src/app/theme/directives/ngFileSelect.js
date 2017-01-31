@@ -2,7 +2,7 @@
   'use strict';
 
   angular.module('BrainPal.theme')
-      .directive('ngFileSelect', ngFileSelect);
+         .directive('ngFileSelect', ngFileSelect);
 
   /** @ngInject */
   function ngFileSelect() {

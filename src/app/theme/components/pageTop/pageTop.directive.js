@@ -6,12 +6,12 @@
   'use strict';
 
   angular.module('BrainPal.theme.components')
-      .directive('pageTop', pageTop);
+         .directive('pageTop', pageTop);
 
   /** @ngInject */
   function pageTop() {
     return {
-      restrict: 'E',
+      restrict   : 'E',
       templateUrl: 'app/theme/components/pageTop/pageTop.html'
     };
   }

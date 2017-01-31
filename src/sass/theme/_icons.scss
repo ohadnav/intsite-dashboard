@@ -1,13 +1,13 @@
 @mixin svg-icon($url, $width:'', $height:'') {
-  display: inline-block;
-  background: url($url) no-repeat center;
-  background-size: contain;
-  vertical-align: middle;
+  display         : inline-block;
+  background      : url($url) no-repeat center;
+  background-size : contain;
+  vertical-align  : middle;
   @if ($width != '') {
-    width: $width + px;
+    width : $width + px;
   }
   @if ($height != '') {
-    height: $height + px;
+    height : $height + px;
   }
 }
 
@@ -22,13 +22,12 @@
 @include svg-icon-class('person', 80, 80);
 @include svg-icon-class('refresh', 80, 80);
 
-
 @mixin png-icon($url, $width, $height) {
-  display: inline-block;
-  width: $width + px;
-  height: $height + px;
-  background: url($url) no-repeat center center;
-  background-size: $width + px $height + px;
+  display         : inline-block;
+  width           : $width + px;
+  height          : $height + px;
+  background      : url($url) no-repeat center center;
+  background-size : $width + px $height + px;
 }
 
 @mixin png-icon-class($iconName, $width, $height) {

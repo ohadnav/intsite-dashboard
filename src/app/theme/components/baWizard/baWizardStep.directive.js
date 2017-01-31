@@ -1,30 +1,30 @@
-(function() {
+(function () {
   'use strict';
 
   angular.module('BrainPal.theme.components')
-    .directive('baWizardStep', baWizardStep);
+         .directive('baWizardStep', baWizardStep);
 
   /** @ngInject */
   function baWizardStep() {
     return {
-      restrict: 'E',
-      transclude: true,
-      require: '^baWizard',
-      scope: {
+      restrict   : 'E',
+      transclude : true,
+      require    : '^baWizard',
+      scope      : {
         form: '='
       },
-      templateUrl:  'app/theme/components/baWizard/baWizardStep.html',
-      link: function($scope, $element, $attrs, wizard) {
+      templateUrl: 'app/theme/components/baWizard/baWizardStep.html',
+      link       : function ($scope, $element, $attrs, wizard) {
         $scope.selected = true;
 
         var tab = {
-          title: $attrs.title,
-          select: select,
-          submit: submit,
-          isComplete: isComplete,
+          title       : $attrs.title,
+          select      : select,
+          submit      : submit,
+          isComplete  : isComplete,
           isAvailiable: isAvailiable,
-          prevTab: undefined,
-          setPrev: setPrev
+          prevTab     : undefined,
+          setPrev     : setPrev
         };
 
         wizard.addTab(tab);

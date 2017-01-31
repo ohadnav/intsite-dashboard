@@ -6,7 +6,7 @@
   'use strict';
 
   angular.module('BrainPal.theme.components')
-      .controller('MsgCenterCtrl', MsgCenterCtrl);
+         .controller('MsgCenterCtrl', MsgCenterCtrl);
 
   /** @ngInject */
   function MsgCenterCtrl($scope, $sce) {
@@ -37,9 +37,9 @@
       //   time: '2 hrs ago'
       // },
       {
-        image: 'assets/img/shopping-cart.svg',
+        image   : 'assets/img/shopping-cart.svg',
         template: 'New record for purchases per day.',
-        time: '5 hrs ago'
+        time    : '5 hrs ago'
       },
       // {
       //   userId: 2,
@@ -52,9 +52,9 @@
       //   time: '2 days ago'
       // },
       {
-        image: 'assets/img/arrow-green-up.svg',
+        image   : 'assets/img/arrow-green-up.svg',
         template: 'New experiment launched.',
-        time: '3 days ago'
+        time    : '3 days ago'
       },
       // {
       //   userId: 1,
@@ -66,8 +66,8 @@
     $scope.messages = [
       {
         userId: 3,
-        text: 'Experiment awaits your approval.',
-        time: '1 min ago'
+        text  : 'Experiment awaits your approval.',
+        time  : '1 min ago'
       },
       // {
       //   userId: 0,
@@ -76,32 +76,24 @@
       // },
       {
         userId: 1,
-        text: 'Need help setting BrainPal up?',
-        time: '10 hrs ago'
+        text  : 'Need help setting BrainPal up?',
+        time  : '10 hrs ago'
       },
       {
         userId: 3,
-        text: 'Weekly summary awaiting in your mailbox.',
-        time: '1 day ago'
+        text  : 'Weekly summary awaiting in your mailbox.',
+        time  : '1 day ago'
       },
       // {
       //   userId: 3,
-      //   text: 'Get to know who we are - from the inside out. From our history and culture, to the...',
-      //   time: '1 day ago'
-      // },
-      // {
-      //   userId: 1,
-      //   text: 'Need some support to reach your goals? Apply for scholarships across a variety of...',
-      //   time: '2 days ago'
-      // },
-      // {
-      //   userId: 0,
-      //   text: 'Wrap the dropdown\'s trigger and the dropdown menu within .dropdown, or...',
-      //   time: '1 week ago'
-      // }
+      //   text: 'Get to know who we are - from the inside out. From our history and culture, to
+      // the...', time: '1 day ago' }, { userId: 1, text: 'Need some support to reach your goals?
+      // Apply for scholarships across a variety of...', time: '2 days ago' }, { userId: 0, text:
+      // 'Wrap the dropdown\'s trigger and the dropdown menu within .dropdown, or...', time: '1
+      // week ago' }
     ];
 
-    $scope.getMessage = function(msg) {
+    $scope.getMessage = function (msg) {
       var text = msg.template;
       if (msg.userId || msg.userId === 0) {
         text = text.replace('&name', '<strong>' + $scope.users[msg.userId].name + '</strong>');

@@ -6,20 +6,20 @@
   'use strict';
 
   angular.module('BrainPal.pages.driver', [])
-      .config(routeConfig);
+         .config(routeConfig);
 
   /** @ngInject */
   function routeConfig($stateProvider) {
     $stateProvider
-        .state('driver', {
-          url: '/driver',
-          templateUrl: 'app/pages/driver/driver.html',
-          title: 'Driver\'s Seat',
-          sidebarMeta: {
-            order: 100,
-            icon: 'ion-model-s',
-          },
-        });
+      .state('driver', {
+        url        : '/driver',
+        templateUrl: 'app/pages/driver/driver.html',
+        title      : 'Driver\'s Seat',
+        sidebarMeta: {
+          order: 100,
+          icon : 'ion-model-s',
+        },
+      });
   }
 
 })();

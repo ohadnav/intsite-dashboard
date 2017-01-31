@@ -2,20 +2,20 @@
   'use strict';
 
   angular.module('BrainPal.theme')
-      .directive('scrollPosition', scrollPosition);
+         .directive('scrollPosition', scrollPosition);
 
   /** @ngInject */
   function scrollPosition() {
     return {
       scope: {
         scrollPosition: '=',
-        maxHeight: '='
+        maxHeight     : '='
       },
-      link: function (scope) {
-        $(window).on('scroll', function() {
+      link : function (scope) {
+        $(window).on('scroll', function () {
           var scrollTop = $(window).scrollTop() > scope.maxHeight;
           if (scrollTop !== scope.prevScrollTop) {
-            scope.$apply(function() {
+            scope.$apply(function () {
               scope.scrollPosition = scrollTop;
             });
           }

@@ -6,7 +6,7 @@
   'use strict';
 
   angular.module('BrainPal.theme')
-    .service('stopableInterval', stopableInterval);
+         .service('stopableInterval', stopableInterval);
 
   /** @ngInject */
   function stopableInterval($window) {

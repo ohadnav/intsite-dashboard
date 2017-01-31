@@ -6,7 +6,7 @@
   'use strict';
 
   angular.module('BrainPal.theme.components')
-    .controller('BaSidebarCtrl', BaSidebarCtrl);
+         .controller('BaSidebarCtrl', BaSidebarCtrl);
 
   /** @ngInject */
   function BaSidebarCtrl($scope, baSidebarService) {
@@ -15,10 +15,10 @@
     $scope.defaultSidebarState = $scope.menuItems[0].stateRef;
 
     $scope.hoverItem = function ($event) {
-      $scope.showHoverElem = true;
-      $scope.hoverElemHeight =  $event.currentTarget.clientHeight;
-      var menuTopValue = 66;
-      $scope.hoverElemTop = $event.currentTarget.getBoundingClientRect().top - menuTopValue;
+      $scope.showHoverElem   = true;
+      $scope.hoverElemHeight = $event.currentTarget.clientHeight;
+      var menuTopValue       = 66;
+      $scope.hoverElemTop    = $event.currentTarget.getBoundingClientRect().top - menuTopValue;
     };
 
     $scope.$on('$stateChangeSuccess', function () {

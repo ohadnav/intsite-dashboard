@@ -9,9 +9,9 @@
 
   /** @ngInject */
   function dateFilter() {
-    return function(text) {
+    return function (text) {
       if (text) {
-        return  moment(text).format('MMM D');
+        return moment(text).format('MMM D');
       }
       return 'current';
     };

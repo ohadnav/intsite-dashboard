@@ -1,44 +1,44 @@
 /** Different tabs positions, which were removed from bootstrap */
 .tabs-below, .tabs-right, .tabs-left {
   .nav-tabs {
-    border-bottom: 0;
+    border-bottom : 0;
   }
 }
 
 .tabs-right, .tabs-left {
   .nav-tabs {
-    min-width: 100px;
+    min-width : 100px;
   }
   .tab-content {
-    width: calc(100% - 100px);
-    overflow-y: auto;
+    width      : calc(100% - 100px);
+    overflow-y : auto;
   }
 }
 
 .tabs-right .tab-content {
-  margin-right: 100px;
+  margin-right : 100px;
 }
 
 .tabs-left .tab-content {
-  margin-left: 100px;
+  margin-left : 100px;
 }
 
 .tab-content > .tab-pane,
 .pill-content > .pill-pane {
-  display: none;
+  display : none;
 }
 
 .tab-content > .active,
 .pill-content > .active {
-  display: block;
+  display : block;
 }
 
 .tabs-below {
   > .nav-tabs {
 
     > li {
-      margin-top: -1px;
-      margin-bottom: 0;
+      margin-top    : -1px;
+      margin-bottom : 0;
 
       > a {
         &:hover, &:focus {
@@ -53,23 +53,23 @@
 }
 
 .tabs-left, .tabs-right {
-  height: 100%;
+  height : 100%;
   > .nav-tabs > li {
-    float: none;
-    margin-bottom: 0;
+    float         : none;
+    margin-bottom : 0;
     > a {
-      min-width: 74px;
-      margin-right: 0;
-      margin-bottom: 3px;
+      min-width     : 74px;
+      margin-right  : 0;
+      margin-bottom : 3px;
     }
   }
 }
 
 .tabs-left > .nav-tabs {
-  float: left;
-  border-bottom-left-radius: 5px;
+  float                     : left;
+  border-bottom-left-radius : 5px;
   > li > a {
-    margin-right: -1px;
+    margin-right : -1px;
 
     &:hover, &:focus {
     }
@@ -82,16 +82,16 @@
 }
 
 .tabs-right > .nav.nav-tabs {
-  float: right;
-  border-top-left-radius: 0;
-  border-bottom-right-radius: 5px;
+  float                      : right;
+  border-top-left-radius     : 0;
+  border-bottom-right-radius : 5px;
   > li > a {
     &:hover, &:focus {
     }
   }
 
   & > li:first-of-type a {
-    border-top-left-radius: 0;
+    border-top-left-radius : 0;
   }
 
   > .active a {
@@ -104,113 +104,113 @@
 
 .nav-tabs > li.with-dropdown {
   > a {
-    padding: 0;
+    padding : 0;
   }
 
   .dropdown-toggle {
-    padding: 10px 15px;
-    display: inline-block;
-    cursor: pointer;
+    padding : 10px 15px;
+    display : inline-block;
+    cursor  : pointer;
   }
 }
 
 .tab-content {
-  padding: 15px 15px 5px 15px;
-  background: transparent;
-  color: $default-text;
+  padding    : 15px 15px 5px 15px;
+  background : transparent;
+  color      : $default-text;
   .tab-pane p {
-    color: $default-text;
+    color : $default-text;
   }
 }
 
 .nav.nav-tabs {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom: 1px solid transparent;
-  background-color: $primary-light;
+  border-top-left-radius  : 5px;
+  border-top-right-radius : 5px;
+  border-bottom           : 1px solid transparent;
+  background-color        : $primary-light;
   a {
-    color: $label-text;
+    color : $label-text;
     &:hover {
-      color: $label-text;
+      color : $label-text;
     }
   }
   & > li > a {
-    margin-right: 0;
-    margin-bottom: 0;
-    border-radius: 0;
-    border: none;
+    margin-right  : 0;
+    margin-bottom : 0;
+    border-radius : 0;
+    border        : none;
     &:hover, &:focus {
-      border: none;
-      background-color: $primary-light;
+      border           : none;
+      background-color : $primary-light;
     }
   }
   & > li.active > a {
-    color: $label-text;
-    background-color: $primary;
+    color            : $label-text;
+    background-color : $primary;
   }
   > li:first-of-type a {
-    border-top-left-radius: 5px;
+    border-top-left-radius : 5px;
   }
   .dropdown-menu > li > a {
-    color: $dropdown-text;
+    color : $dropdown-text;
     &:hover {
-      color: $dropdown-text;
+      color : $dropdown-text;
     }
   }
 }
 
 .blur-theme {
   .nav.nav-tabs {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color : rgba(0, 0, 0, 0.2);
     a {
-      color: $default-text;
+      color : $default-text;
       &:hover {
-        color: $default-text;
+        color : $default-text;
       }
     }
     & > li > a:hover {
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color : rgba(0, 0, 0, 0.2);
     }
     & > li.active > a {
-      color: $default-text;
-      background-color: rgba(0, 0, 0, 0.25);
+      color            : $default-text;
+      background-color : rgba(0, 0, 0, 0.25);
     }
   }
 }
 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-  background-color: transparent;
+  background-color : transparent;
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-  border: none;
+  border : none;
 }
 
-.accordion-panel  {
+.accordion-panel {
   .panel-heading {
-    border-radius: 3px;
+    border-radius : 3px;
   }
 
   &.panel-open .panel-heading {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border-bottom-left-radius  : 0;
+    border-bottom-right-radius : 0;
   }
 
   &:not(.panel-open) .panel-heading {
-    transition-delay: .3s;
+    transition-delay : .3s;
   }
 
   > .panel-heading + .panel-collapse > .panel-body {
-    border-top: none;
+    border-top : none;
   }
 }
 
 .accordion-panel .panel-heading {
-  padding: 0;
+  padding : 0;
   .accordion-toggle {
-    display: inline-block;
-    width: 100%;
-    padding: 14px 22px;
+    display : inline-block;
+    width   : 100%;
+    padding : 14px 22px;
   }
 }
 

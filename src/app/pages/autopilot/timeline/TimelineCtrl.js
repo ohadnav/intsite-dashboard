@@ -28,7 +28,7 @@
         uplift     : 3,
         description: 'When the content is vivid the user is buying.',
         startDate  : '20160110',
-        endDate  : '20160117',
+        endDate    : '20160117',
         beforeSrc  : 'dynamicBefore.jpg',
         afterSrc   : 'dynamicAfter.gif'
       },
@@ -39,7 +39,7 @@
         uplift     : 2,
         description: 'Reviews make your offer seem more trustworthy.',
         startDate  : '20160102',
-        endDate  : '20160111',
+        endDate    : '20160111',
         beforeSrc  : 'compactBefore.jpg',
         afterSrc   : 'reviewsAfter.jpg'
       }];

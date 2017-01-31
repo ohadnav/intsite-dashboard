@@ -6,12 +6,12 @@
   'use strict';
 
   angular.module('BrainPal.theme')
-    .filter('plainText', plainText);
+         .filter('plainText', plainText);
 
   /** @ngInject */
   function plainText() {
-    return function(text) {
-      return  text ? String(text).replace(/<[^>]+>/gm, '') : '';
+    return function (text) {
+      return text ? String(text).replace(/<[^>]+>/gm, '') : '';
     };
   }
 

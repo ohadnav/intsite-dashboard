@@ -6,14 +6,14 @@
   'use strict';
 
   angular.module('BrainPal.theme.components')
-      .directive('contentTop', contentTop);
+         .directive('contentTop', contentTop);
 
   /** @ngInject */
   function contentTop($location, $state) {
     return {
-      restrict: 'E',
+      restrict   : 'E',
       templateUrl: 'app/theme/components/contentTop/contentTop.html',
-      link: function($scope) {
+      link       : function ($scope) {
         $scope.$watch(function () {
           $scope.activePageTitle = $state.current.title;
         });

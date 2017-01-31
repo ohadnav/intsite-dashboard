@@ -6,13 +6,13 @@
   'use strict';
 
   angular.module('BrainPal.theme')
-      .directive('includeWithScope', includeWithScope);
+         .directive('includeWithScope', includeWithScope);
 
   /** @ngInject */
   function includeWithScope() {
     return {
-      restrict: 'AE',
-      templateUrl: function(ele, attrs) {
+      restrict   : 'AE',
+      templateUrl: function (ele, attrs) {
         return attrs.includeWithScope;
       }
     };

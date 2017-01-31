@@ -6,20 +6,20 @@
   'use strict';
 
   angular.module('BrainPal.pages.dashboard', [])
-      .config(routeConfig);
+         .config(routeConfig);
 
   /** @ngInject */
   function routeConfig($stateProvider) {
     $stateProvider
-        .state('dashboard', {
-          url: '/dashboard',
-          templateUrl: 'app/pages/dashboard/dashboard.html',
-          title: 'Dashboard',
-          sidebarMeta: {
-            icon: 'ion-stats-bars',
-            order: 0,
-          },
-        });
+      .state('dashboard', {
+        url        : '/dashboard',
+        templateUrl: 'app/pages/dashboard/dashboard.html',
+        title      : 'Dashboard',
+        sidebarMeta: {
+          icon : 'ion-stats-bars',
+          order: 0,
+        },
+      });
   }
 
 })();

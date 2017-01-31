@@ -10,8 +10,8 @@
   /** @ngInject */
   function timeline() {
     return {
-      restrict: 'E',
-      controller: 'TimelineCtrl',
+      restrict   : 'E',
+      controller : 'TimelineCtrl',
       templateUrl: 'app/pages/autopilot/timeline/timeline.html'
     };
   }

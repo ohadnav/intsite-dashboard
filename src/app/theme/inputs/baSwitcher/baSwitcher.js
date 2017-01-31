@@ -6,13 +6,13 @@
   'use strict';
 
   angular.module('BrainPal.theme.inputs')
-      .directive('baSwitcher', baSwitcher);
+         .directive('baSwitcher', baSwitcher);
 
   /** @ngInject */
   function baSwitcher() {
     return {
       templateUrl: 'app/theme/inputs/baSwitcher/baSwitcher.html',
-      scope: {
+      scope      : {
         switcherStyle: '@',
         switcherValue: '='
       }

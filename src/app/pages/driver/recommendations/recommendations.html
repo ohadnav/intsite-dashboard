@@ -4,7 +4,7 @@
       <div id = 'recommendation-{{$index}}' class = 'driver-recommendation {{::recommendation.showTop ? "driver-top" : ""}}'
            ba-panel
            ba-panel-class = 'with-scroll horizontal-tabs tabs-panel medium-panel'>
-        <img class = 'driver-bg' ng-src='{{::(recommendation.imgSrc | experimentAfter)}}'>
+        <img class = 'driver-bg' ng-src = '{{::(recommendation.imgSrc | experimentAfter)}}'>
         <div class = 'driver-overlay'></div>
         <uib-tabset active = '$tabSetStatus.activeTab'>
           <uib-tab>
@@ -41,7 +41,7 @@
               <span>Analysis</span>
             </uib-tab-heading>
             <div class = 'driver-analysis'>
-              <div class = 'driver-explaination' ng-if='recommendation.analysis'>
+              <div class = 'driver-explaination' ng-if = 'recommendation.analysis'>
                 {{::recommendation.analysis}}
               </div>
               <button type = 'button' class = 'btn btn-danger btn-with-icon'>

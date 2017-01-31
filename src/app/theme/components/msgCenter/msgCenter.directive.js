@@ -6,14 +6,14 @@
   'use strict';
 
   angular.module('BrainPal.theme.components')
-      .directive('msgCenter', msgCenter);
+         .directive('msgCenter', msgCenter);
 
   /** @ngInject */
   function msgCenter() {
     return {
-      restrict: 'E',
+      restrict   : 'E',
       templateUrl: 'app/theme/components/msgCenter/msgCenter.html',
-      controller: 'MsgCenterCtrl'
+      controller : 'MsgCenterCtrl'
     };
   }
 

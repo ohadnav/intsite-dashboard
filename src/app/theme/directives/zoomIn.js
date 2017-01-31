@@ -5,13 +5,13 @@
   'use strict';
 
   angular.module('BrainPal.theme')
-      .directive('zoomIn', zoomIn);
+         .directive('zoomIn', zoomIn);
 
   /** @ngInject */
   function zoomIn($timeout, $rootScope) {
     return {
       restrict: 'A',
-      link: function ($scope, elem) {
+      link    : function ($scope, elem) {
         var delay = 1000;
 
         if ($rootScope.$pageFinishedLoading) {

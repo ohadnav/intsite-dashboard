@@ -1,8 +1,8 @@
-(function() {
+(function () {
   'use strict';
 
   angular.module('BrainPal.theme.components')
-    .controller('baWizardCtrl', baWizardCtrl);
+         .controller('baWizardCtrl', baWizardCtrl);
 
   /** @ngInject */
   function baWizardCtrl($scope) {
@@ -12,7 +12,7 @@
     vm.tabNum = 0;
     vm.progress = 0;
 
-    vm.addTab = function(tab) {
+    vm.addTab = function (tab) {
       tab.setPrev(vm.tabs[vm.tabs.length - 1]);
       vm.tabs.push(tab);
       vm.selectTab(0);
@@ -35,7 +35,7 @@
     };
 
     vm.isLastTab = function () {
-      return vm.tabNum == vm.tabs.length - 1 ;
+      return vm.tabNum == vm.tabs.length - 1;
     };
 
     vm.nextTab = function () {

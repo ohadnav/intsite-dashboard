@@ -10,11 +10,11 @@
 
   /** @ngInject */
   function UpliftChartCtrl(baUtil, baConfig, $element, layoutPaths, $timeout) {
-    var isNarrow     = window.innerWidth && window.innerWidth < 600;
-    var id           = $element[0].getAttribute('id');
+    var isNarrow  = window.innerWidth && window.innerWidth < 600;
+    var id        = $element[0].getAttribute('id');
     var upliftChart;
-    var chartData    = dataProvider();
-    var createFn     = function () {
+    var chartData = dataProvider();
+    var createFn  = function () {
       upliftChart = AmCharts.makeChart(id, {
         theme        : "light",
         type         : "serial",
@@ -94,7 +94,7 @@
     }
 
     function dataProvider() {
-      var data   = [];
+      var data = [];
       for (var i = 0; i < numDays(); i++) {
         var uplift = 200 + Math.round(Math.random() * 1500);
         data.push({
@@ -112,13 +112,13 @@
       var lowHex  = '#FFFF33';
       var highHex = '#04D215';
       var r       = (Math.round((1 - scale) * parseInt(lowHex.slice(1, 3), 16) +
-                    scale * parseInt(highHex.slice(1, 3), 16))).toString(16);
+                                scale * parseInt(highHex.slice(1, 3), 16))).toString(16);
       if (r.length === 1) r = '0' + r;
-      var g       = (Math.round((1 - scale) * parseInt(lowHex.slice(3, 5), 16) +
-                     scale * parseInt(highHex.slice(3, 5), 16))).toString(16);
+      var g = (Math.round((1 - scale) * parseInt(lowHex.slice(3, 5), 16) +
+                          scale * parseInt(highHex.slice(3, 5), 16))).toString(16);
       if (g.length === 1) g = '0' + g;
-      var b       = (Math.round((1 - scale) * parseInt(lowHex.slice(5, 7), 16) +
-                     scale * parseInt(highHex.slice(5, 7), 16))).toString(16);
+      var b = (Math.round((1 - scale) * parseInt(lowHex.slice(5, 7), 16) +
+                          scale * parseInt(highHex.slice(5, 7), 16))).toString(16);
       if (b.length === 1) b = '0' + b;
       return '#' + r.toString(16) + g.toString(16) + b.toString(16);
     }

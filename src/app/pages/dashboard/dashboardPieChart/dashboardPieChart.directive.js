@@ -6,13 +6,13 @@
   'use strict';
 
   angular.module('BrainPal.pages.dashboard')
-      .directive('dashboardPieChart', dashboardPieChart);
+         .directive('dashboardPieChart', dashboardPieChart);
 
   /** @ngInject */
   function dashboardPieChart() {
     return {
-      restrict: 'E',
-      controller: 'DashboardPieChartCtrl',
+      restrict   : 'E',
+      controller : 'DashboardPieChartCtrl',
       templateUrl: 'app/pages/dashboard/dashboardPieChart/dashboardPieChart.html'
     };
   }

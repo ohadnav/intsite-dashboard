@@ -19,15 +19,15 @@
         imgSrc  : 'dynamicAfter.gif'
       },
       {
-        state  : 'new',
-        source : 'facebook',
-        showTop: true,
+        state   : 'new',
+        source  : 'facebook',
+        showTop : true,
         analysis: 'Visitors from Facebook are 13% more likely to buy offers with favourable' +
                   ' reviews.',
         imgSrc  : 'reviewsAfter.jpg'
       },
       {
-        showTop: true,
+        showTop : true,
         analysis: 'The average user spends less than 7 seconds per offer, don\'t make them waste' +
                   ' them looking for a CTA.',
         imgSrc  : 'compactAfter.jpg'
