@@ -1,5 +1,5 @@
 /**
- * @author v.lugovsky
+ * @author ohad
  * created on 03.05.2016
  */
 (function () {
