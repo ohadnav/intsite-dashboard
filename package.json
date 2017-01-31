@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "The beautiful actionable BrainPal dashboard.",
   "author": "Ohad Navon <ohad@brianpal.io>",
-  "contributors": [{
-    "name": "Akveo team",
-    "email": "contact@akveo.com"
-  }],
+  "contributors": [
+    {
+      "name": "Akveo team",
+      "email": "contact@akveo.com"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/mybrainpal/dashboard"
@@ -21,6 +23,7 @@
     "picasso"
   ],
   "devDependencies": {
+    "bower": "^1.8.0",
     "browser-sync": "~2.18.2",
     "browser-sync-spa": "~1.0.3",
     "chalk": "~1.1.1",
@@ -65,4 +68,3 @@
     "postinstall": "bower install"
   }
 }
-
