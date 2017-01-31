@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages.maps')
+  angular.module('BrainPal.pages.maps')
       .controller('GmapPageCtrl', GmapPageCtrl);
 
   /** @ngInject */

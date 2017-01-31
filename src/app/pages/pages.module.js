@@ -5,19 +5,19 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages', [
+  angular.module('BrainPal.pages', [
     'ui.router',
 
-    'BlurAdmin.pages.dashboard',
-    'BlurAdmin.pages.autopilot',
-    'BlurAdmin.pages.driver',
-    // 'BlurAdmin.pages.ui',
-    // 'BlurAdmin.pages.components',
-    // 'BlurAdmin.pages.form',
-    // 'BlurAdmin.pages.tables',
-    // 'BlurAdmin.pages.charts',
-    // 'BlurAdmin.pages.maps',
-    // 'BlurAdmin.pages.profile',
+    'BrainPal.pages.dashboard',
+    'BrainPal.pages.autopilot',
+    'BrainPal.pages.driver',
+    // 'BrainPal.pages.ui',
+    // 'BrainPal.pages.components',
+    // 'BrainPal.pages.form',
+    // 'BrainPal.pages.tables',
+    // 'BrainPal.pages.charts',
+    // 'BrainPal.pages.maps',
+    // 'BrainPal.pages.profile',
   ])
       .config(routeConfig);
 

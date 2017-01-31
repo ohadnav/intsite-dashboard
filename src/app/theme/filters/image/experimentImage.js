@@ -4,7 +4,7 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.theme')
+  angular.module('BrainPal.theme')
          .filter('experimentBefore', beforeImage);
 
   /** @ngInject */
@@ -15,7 +15,7 @@
     };
   }
 
-  angular.module('BlurAdmin.theme')
+  angular.module('BrainPal.theme')
          .filter('experimentAfter', afterImage);
 
   /** @ngInject */

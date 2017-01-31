@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages.driver')
+  angular.module('BrainPal.pages.driver')
          .controller('RecommendationsCtrl', RecommendationsCtrl);
 
   /** @ngInject */

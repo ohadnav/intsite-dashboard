@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages.form')
+  angular.module('BrainPal.pages.form')
     .controller('SelectpickerPanelCtrl', SelectpickerPanelCtrl);
 
   /** @ngInject */

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('BlurAdmin', [
+angular.module('BrainPal', [
   'ngAnimate',
   'ui.bootstrap',
   'ui.sortable',
@@ -13,6 +13,6 @@ angular.module('BlurAdmin', [
   'ngJsTree',
   'angular-progress-button-styles',
 
-  'BlurAdmin.theme',
-  'BlurAdmin.pages'
+  'BrainPal.theme',
+  'BrainPal.pages'
 ]);

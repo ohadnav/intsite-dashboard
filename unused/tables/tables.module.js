@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages.tables', [])
+  angular.module('BrainPal.pages.tables', [])
     .config(routeConfig);
 
   /** @ngInject */

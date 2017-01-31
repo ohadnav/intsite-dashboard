@@ -4,7 +4,7 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages.autopilot')
+  angular.module('BrainPal.pages.autopilot')
          .directive('timeline', timeline);
 
   /** @ngInject */

@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages.autopilot', [])
+  angular.module('BrainPal.pages.autopilot', [])
     .config(routeConfig);
 
   /** @ngInject */
