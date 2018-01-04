@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  angular.module('BrainPal.pages.dashboard')
+  angular.module('IntSite.pages.dashboard')
          .controller('UpliftChartCtrl', UpliftChartCtrl);
 
   /** @ngInject */

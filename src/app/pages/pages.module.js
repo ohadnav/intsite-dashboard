@@ -5,19 +5,19 @@
 (function () {
   'use strict';
 
-  angular.module('BrainPal.pages', [
+  angular.module('IntSite.pages', [
     'ui.router',
 
-    'BrainPal.pages.dashboard',
-    'BrainPal.pages.autopilot',
-    'BrainPal.pages.driver',
-    // 'BrainPal.pages.ui',
-    // 'BrainPal.pages.components',
-    // 'BrainPal.pages.form',
-    // 'BrainPal.pages.tables',
-    // 'BrainPal.pages.charts',
-    // 'BrainPal.pages.maps',
-    // 'BrainPal.pages.profile',
+    'IntSite.pages.dashboard',
+    'IntSite.pages.autopilot',
+    'IntSite.pages.driver',
+    // 'IntSite.pages.ui',
+    // 'IntSite.pages.components',
+    // 'IntSite.pages.form',
+    // 'IntSite.pages.tables',
+    // 'IntSite.pages.charts',
+    // 'IntSite.pages.maps',
+    // 'IntSite.pages.profile',
   ])
          .config(routeConfig);
 

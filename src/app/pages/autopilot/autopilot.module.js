@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  angular.module('BrainPal.pages.autopilot', [])
+  angular.module('IntSite.pages.autopilot', [])
          .config(routeConfig);
 
   /** @ngInject */

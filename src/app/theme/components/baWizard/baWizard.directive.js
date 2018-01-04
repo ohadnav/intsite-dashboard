@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  angular.module('BrainPal.theme.components')
+  angular.module('IntSite.theme.components')
          .directive('baWizard', baWizard);
 
   /** @ngInject */

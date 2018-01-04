@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  angular.module('BrainPal.pages.driver')
+  angular.module('IntSite.pages.driver')
          .controller('RecommendationsCtrl', RecommendationsCtrl);
 
   /** @ngInject */

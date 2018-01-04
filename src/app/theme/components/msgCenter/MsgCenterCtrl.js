@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  angular.module('BrainPal.theme.components')
+  angular.module('IntSite.theme.components')
          .controller('MsgCenterCtrl', MsgCenterCtrl);
 
   /** @ngInject */
@@ -76,7 +76,7 @@
       // },
       {
         userId: 1,
-        text  : 'Need help setting BrainPal up?',
+        text  : 'Need help setting IntSite up?',
         time  : '10 hrs ago'
       },
       {

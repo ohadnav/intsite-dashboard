@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  angular.module('BrainPal.theme')
+  angular.module('IntSite.theme')
          .filter('kameleonImg', kameleonImg);
 
   /** @ngInject */

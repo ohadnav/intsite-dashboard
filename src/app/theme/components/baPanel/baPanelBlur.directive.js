@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  angular.module('BrainPal.theme')
+  angular.module('IntSite.theme')
          .directive('baPanelBlur', baPanelBlur);
 
   /** @ngInject */

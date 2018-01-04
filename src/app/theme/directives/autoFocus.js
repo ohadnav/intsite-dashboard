@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  angular.module('BrainPal.theme')
+  angular.module('IntSite.theme')
          .directive('autoFocus', autoFocus);
 
   /** @ngInject */

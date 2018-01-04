@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('BrainPal', [
+angular.module('IntSite', [
   'ngAnimate',
   'ui.bootstrap',
   'ui.sortable',
@@ -13,6 +13,6 @@ angular.module('BrainPal', [
   'ngJsTree',
   'angular-progress-button-styles',
 
-  'BrainPal.theme',
-  'BrainPal.pages'
+  'IntSite.theme',
+  'IntSite.pages'
 ]);

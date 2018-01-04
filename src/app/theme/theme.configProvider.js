@@ -30,7 +30,7 @@
     white      : '#10c4b5',
   };
 
-  angular.module('BrainPal.theme')
+  angular.module('IntSite.theme')
          .provider('baConfig', configProvider);
 
   /** @ngInject */

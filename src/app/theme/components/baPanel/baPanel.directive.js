@@ -8,7 +8,7 @@
   /**
    * Includes basic panel layout inside of current element.
    */
-  angular.module('BrainPal.theme')
+  angular.module('IntSite.theme')
          .directive('baPanel', baPanel);
 
   /** @ngInject */

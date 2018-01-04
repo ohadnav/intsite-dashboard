@@ -4,7 +4,7 @@
 (function () {
   'use strict';
 
-  angular.module('BrainPal.pages.driver')
+  angular.module('IntSite.pages.driver')
          .directive('recommendations', recommendations);
 
   /** @ngInject */

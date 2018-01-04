@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  angular.module('BrainPal.theme')
+  angular.module('IntSite.theme')
          .service('preloader', preloader);
 
   /** @ngInject */

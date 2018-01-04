@@ -4,7 +4,7 @@
 (function () {
   'use strict';
 
-  angular.module('BrainPal.theme')
+  angular.module('IntSite.theme')
          .filter('experimentBefore', beforeImage);
 
   /** @ngInject */
@@ -15,7 +15,7 @@
     };
   }
 
-  angular.module('BrainPal.theme')
+  angular.module('IntSite.theme')
          .filter('experimentAfter', afterImage);
 
   /** @ngInject */

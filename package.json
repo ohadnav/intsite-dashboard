@@ -1,7 +1,7 @@
 {
-  "name": "brainpal-dashboard",
+  "name": "intsite-dashboard",
   "version": "1.0.0",
-  "description": "The beautiful actionable BrainPal dashboard.",
+  "description": "The beautiful actionable IntSite dashboard.",
   "author": "Ohad Navon <ohad@brianpal.io>",
   "contributors": [
     {
@@ -11,14 +11,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mybrainpal/dashboard"
+    "url": "https://github.com/myintsite/dashboard"
   },
   "bugs": {
-    "url": "https://github.com/mybrainpal/dashboard/issues"
+    "url": "https://github.com/myintsite/dashboard/issues"
   },
   "license": "MIT",
   "keywords": [
-    "brainpal",
+    "intsite",
     "dashboard",
     "picasso"
   ],

@@ -4,7 +4,7 @@
 (function () {
   'use strict';
 
-  angular.module('BrainPal.theme')
+  angular.module('IntSite.theme')
          .filter('experimentLocale', locale);
 
   /** @ngInject */
@@ -14,7 +14,7 @@
     };
   }
 
-  angular.module('BrainPal.theme')
+  angular.module('IntSite.theme')
          .filter('experimentSource', source);
 
   /** @ngInject */
@@ -26,7 +26,7 @@
     };
   }
 
-  angular.module('BrainPal.theme')
+  angular.module('IntSite.theme')
          .filter('experimentStateIcon', stateIcon);
 
   /** @ngInject */
@@ -43,7 +43,7 @@
     };
   }
 
-  angular.module('BrainPal.theme')
+  angular.module('IntSite.theme')
          .filter('experimentStateText', sourceText);
 
   /** @ngInject */

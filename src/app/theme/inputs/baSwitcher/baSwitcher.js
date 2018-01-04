@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  angular.module('BrainPal.theme.inputs')
+  angular.module('IntSite.theme.inputs')
          .directive('baSwitcher', baSwitcher);
 
   /** @ngInject */
