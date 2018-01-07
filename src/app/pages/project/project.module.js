@@ -5,18 +5,18 @@
 (function () {
   'use strict';
 
-  angular.module('IntSite.pages.dashboard', [])
+  angular.module('IntSite.pages.project', [])
          .config(routeConfig);
 
   /** @ngInject */
   function routeConfig($stateProvider) {
     $stateProvider
-      .state('dashboard', {
-        url        : '/dashboard',
-        templateUrl: 'app/pages/dashboard/dashboard.html',
-        title      : 'Dashboard',
+      .state('project', {
+        url        : '/project',
+        templateUrl: 'app/pages/project/project.html',
+        title      : 'Project',
         sidebarMeta: {
-          icon : 'ion-stats-bars',
+          icon : 'ion-settings',
           order: 0,
         },
       });

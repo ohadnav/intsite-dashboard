@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  angular.module('IntSite.pages.dashboard')
+  angular.module('IntSite.pages.project')
          .controller('UpliftChartCtrl', UpliftChartCtrl);
 
   /** @ngInject */
@@ -18,11 +18,10 @@
       upliftChart = AmCharts.makeChart(id, {
         theme        : "light",
         type         : "serial",
-        startDuration: 2,
         dataProvider : chartData,
         graphs       : [
           {
-            balloonText    : "[[category]]: <b>[[value]]$</b>",
+            balloonText    : "[[category]]: <b>[[value]]</b>",
             fillColorsField: 'revenueColor',
             fillAlphas     : 1,
             lineAlpha      : 0,
@@ -30,7 +29,7 @@
             valueField     : "revenue"
           },
           {
-            balloonText    : "<i class='ion-arrow-up-c'></i> Uplift: <b>[[value]]$</b>",
+            balloonText    : "<i class='ion-arrow-up-c'></i> Uplift: <b>[[value]]</b>",
             fillColorsField: 'upliftColor',
             fillAlphas     : 1,
             lineAlpha      : 0,
@@ -40,7 +39,7 @@
         depth3D      : depth3D(),
         angle        : angle(),
         chartCursor  : {
-          categoryBalloonColor   : '#4285F4',
+          categoryBalloonColor   : '#209e91',
           categoryBalloonAlpha   : 0.7,
           cursorAlpha            : 0,
           valueLineEnabled       : false,
@@ -66,21 +65,22 @@
       });
       // upliftChart.zoomToIndexes(chartData.length - numDays(), chartData.length - 1);
     };
-    baUtil.onEnterViewport($element[0], createFn, function () {
-      $timeout(createFn, 2000);
-    });
+    // baUtil.onEnterViewport($element[0], createFn, function () {
+    //   $timeout(createFn, 2000);
+    // });
+    createFn();
 
     function depth3D() {
       if (window.innerWidth) {
-        // Returns ~20 for MacBook Pro 15', and ~2 for iPhone 6.
-        return Math.min(Math.max(Math.round(window.innerWidth / 80 + 2), 2), 30);
+        // Returns ~30 for MacBook Pro 15', and ~2 for iPhone 6.
+        return Math.min(Math.max(Math.round(window.innerWidth / 150 + 2), 2), 10);
       }
       return 4;
     }
 
     function angle() {
       if (window.innerWidth) {
-        return Math.max(Math.round(window.innerWidth / 112 + 67), 70);
+        return Math.min(Math.max(Math.round(window.innerWidth / 112 + 67), 70), 80);
       }
       return 80;
     }
@@ -96,13 +96,18 @@
     function dataProvider() {
       var data = [];
       for (var i = 0; i < numDays(); i++) {
-        var uplift = 200 + Math.round(Math.random() * 1500);
+        var uplift = truncateFloat(Math.random() / 20);
+        var pace = truncateFloat(0.1  + Math.random() / 20);
+        if (moment().add(i - numDays(), 'days').format('dddd') === 'Sunday' || moment().add(i - numDays(), 'days').format('dddd') === 'Saturday') {
+          uplift = 0;
+          pace = 0;
+        }
         data.push({
                     date        : moment().add(i - numDays(), 'days').format('MMM D'),
-                    revenue     : 3000 + Math.round(Math.random() * 500),
+                    revenue     : pace,
                     revenueColor: '#bbb',
                     uplift      : Math.max(uplift, 0),
-                    upliftColor : upliftColor(Math.min(Math.max(uplift / 1700, 0), 1))
+                    upliftColor : upliftColor(Math.min(Math.max(uplift / 0.1, 0), 1))
                   });
       }
       return data;
@@ -121,6 +126,10 @@
                           scale * parseInt(highHex.slice(5, 7), 16))).toString(16);
       if (b.length === 1) b = '0' + b;
       return '#' + r.toString(16) + g.toString(16) + b.toString(16);
+    }
+
+    function truncateFloat(f) {
+      return Math.round(f * 100) / 100.0;
     }
   }
 

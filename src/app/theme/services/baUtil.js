@@ -72,7 +72,7 @@
         id             : id,
         value          : 40,
         min            : 0,
-        max            : 50,
+        max            : 100,
         decimals       : 0,
         gaugeWidthScale: 0.6,
         pointer        : true,
@@ -86,8 +86,10 @@
         symbol         : '%',
         minTxt         : ' ',
         maxTxt         : ' ',
-        levelColors    : ["#FF9E01",
+        levelColors    : ["#ce3311",
+                          "#FF9E01",
                           "#F8FF01",
+                          "#69FF11",
                           "#04D215"]
       };
       return new JustGage($.extend(options, customOptions));

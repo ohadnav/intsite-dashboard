@@ -1,0 +1,37 @@
+<!--<dashboard-pie-chart></dashboard-pie-chart>-->
+
+<div class = 'row'>
+  <div class = 'col-lg-5 col-md-4 col-sm-12 bird-eye'
+       ba-panel
+       ba-panel-title = 'Bird eye view'
+       ba-panel-class = 'medium-panel'>
+    <iframe id = 'youtube-preview'
+            src = 'https://www.youtube.com/embed/AkduJ-ZT8c4?autoplay=1&loop=1&controls=0&mute=1&showinfo=0&playlist=AkduJ-ZT8c4'>
+    </iframe>
+  </div>
+  <div class = 'col-lg-4 col-md-4 col-sm-6 col-xs-12'
+       ba-panel
+       ba-panel-title = 'Today Output'
+       ba-panel-class = 'medium-panel'>
+    <div ng-include = "'app/pages/project/outputChart/outputChart.html'"></div>
+  </div>
+  <div class = 'col-lg-3 col-md-4 col-sm-6 col-xs-12'
+       ba-panel
+       ba-panel-title = 'Feed'
+       ba-panel-class = 'medium-panel with-scroll'>
+    <task-feed></task-feed>
+  </div>
+</div>
+
+<div class = 'row'>
+  <div class = 'col-lg-6 col-md-12'
+       ba-panel
+       ba-panel-title = 'Daily safety'>
+    <div ng-include = "'app/pages/project/safetyChart/safetyChart.html'"></div>
+  </div>
+  <div class = 'col-lg-6 col-md-12'
+       ba-panel
+       ba-panel-title = 'Floors per day'>
+    <div ng-include = "'app/pages/project/upliftChart/upliftChart.html'"></div>
+  </div>
+</div>

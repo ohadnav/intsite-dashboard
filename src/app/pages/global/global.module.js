@@ -5,19 +5,19 @@
 (function () {
   'use strict';
 
-  angular.module('IntSite.pages.driver', [])
+  angular.module('IntSite.pages.global', [])
          .config(routeConfig);
 
   /** @ngInject */
   function routeConfig($stateProvider) {
     $stateProvider
       .state('driver', {
-        url        : '/driver',
-        templateUrl: 'app/pages/driver/driver.html',
-        title      : 'Driver\'s Seat',
+        url        : '/global',
+        templateUrl: 'app/pages/global/global.html',
+        title      : 'Global',
         sidebarMeta: {
-          order: 100,
-          icon : 'ion-model-s',
+          order: 10,
+          icon : 'ion-earth',
         },
       });
   }

@@ -1,0 +1,36 @@
+iframe#youtube-preview {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: 587px;
+  height: 330px;
+
+  @media screen and (min-width : $resXXL) and (max-width : 1640px) {
+    width: 427px;
+    height: 240px;
+  }
+
+  @media screen and (min-width : $resL) and (max-width : $resXXL) {
+    width: 320px;
+    height: 180px;
+  }
+
+  @media screen and (max-width : $resM) {
+    width: 533px;
+    height: 300px;
+  }
+
+  @media screen and (max-width : $resS) {
+    width: 427px;
+    height: 240px;
+  }
+
+  @media screen and (max-width : $resXS) {
+    width: 320px;
+    height: 180px;
+  }
+
+  @media screen and (max-width : $resMin) {
+    width: 213px;
+    height: 120px;
+  }
+}

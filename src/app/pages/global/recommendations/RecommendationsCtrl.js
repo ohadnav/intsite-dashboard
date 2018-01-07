@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  angular.module('IntSite.pages.driver')
+  angular.module('IntSite.pages.global')
          .controller('RecommendationsCtrl', RecommendationsCtrl);
 
   /** @ngInject */

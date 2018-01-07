@@ -1,0 +1,26 @@
+<div class = 'row'>
+  <div class = 'col-lg-9 col-md-8 col-sm-6 col-xs-12'
+       ba-panel
+       ba-panel-title = 'Control map'>
+    <control-map></control-map>
+  </div>
+  <div class = 'col-lg-3 col-md-4 col-sm-6 col-xs-12'
+       ba-panel
+       ba-panel-title = 'Feed'
+       ba-panel-class = 'xmedium-panel with-scroll'>
+    <global-feed></global-feed>
+  </div>
+</div>
+
+<div class = 'row'>
+  <div class = 'col-lg-6 col-md-12'
+       ba-panel
+       ba-panel-title = 'Floors per day'>
+    <div ng-include = "'app/pages/global/floorsChart/floorsChart.html'"></div>
+  </div>
+  <div class = 'col-lg-6 col-md-12'
+       ba-panel
+       ba-panel-title = 'Daily safety'>
+    <div ng-include = "'app/pages/global/safetyChart/safetyChart.html'"></div>
+  </div>
+</div>

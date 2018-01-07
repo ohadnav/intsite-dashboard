@@ -16,6 +16,7 @@
            images: {
              root       : IMAGES_ROOT,
              profile    : IMAGES_ROOT + 'app/profile/',
+             site    : IMAGES_ROOT + 'app/site/',
              experiments: IMAGES_ROOT + 'app/experiments/',
              amMap      : 'assets/img/theme/vendor/ammap//dist/ammap/images/',
              amChart    : 'assets/img/theme/vendor/amcharts/dist/amcharts/images/'

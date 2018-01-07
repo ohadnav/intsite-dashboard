@@ -4,7 +4,7 @@
 (function () {
   'use strict';
 
-  angular.module('IntSite.pages.driver')
+  angular.module('IntSite.pages.global')
          .directive('recommendations', recommendations);
 
   /** @ngInject */
@@ -12,7 +12,7 @@
     return {
       restrict   : 'E',
       controller : 'RecommendationsCtrl',
-      templateUrl: 'app/pages/driver/recommendations/recommendations.html'
+      templateUrl: 'app/pages/global/recommendations/recommendations.html'
     };
   }
 })();

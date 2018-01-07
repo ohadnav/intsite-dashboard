@@ -8,9 +8,9 @@
   angular.module('IntSite.pages', [
     'ui.router',
 
-    'IntSite.pages.dashboard',
+    'IntSite.pages.project',
+    'IntSite.pages.global',
     'IntSite.pages.autopilot',
-    'IntSite.pages.driver',
     // 'IntSite.pages.ui',
     // 'IntSite.pages.components',
     // 'IntSite.pages.form',
@@ -23,7 +23,7 @@
 
   /** @ngInject */
   function routeConfig($urlRouterProvider, baSidebarServiceProvider) {
-    $urlRouterProvider.otherwise('/dashboard');
+    $urlRouterProvider.otherwise('/project');
 
     // baSidebarServiceProvider.addStaticItem({
     //   title: 'Pages',

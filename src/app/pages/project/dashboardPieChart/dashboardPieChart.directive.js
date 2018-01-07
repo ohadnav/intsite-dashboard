@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  angular.module('IntSite.pages.dashboard')
+  angular.module('IntSite.pages.project')
          .directive('dashboardPieChart', dashboardPieChart);
 
   /** @ngInject */
@@ -13,7 +13,7 @@
     return {
       restrict   : 'E',
       controller : 'DashboardPieChartCtrl',
-      templateUrl: 'app/pages/dashboard/dashboardPieChart/dashboardPieChart.html'
+      templateUrl: 'app/pages/project/dashboardPieChart/dashboardPieChart.html'
     };
   }
 })();
