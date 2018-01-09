@@ -23,6 +23,13 @@
         zoomControlEnabled: true,
         panControlEnabled : false
       },
+      imagesSettings: {
+        rollOverColor: "#089282",
+        rollOverScale: 3,
+        selectedScale: 3,
+        selectedColor: "#089282",
+        color: "#13564e",
+      },
       dataProvider : {
         map            : "worldLow",
         getAreasFromMap: true,
@@ -30,7 +37,7 @@
           {
             svgPath  : targetSVG,
             zoomLevel: 5,
-            scale    : 0.6,
+            scale    : 0.5,
             title    : "Washington tower",
             latitude : 38.8921,
             longitude: -77.0241
@@ -38,7 +45,7 @@
           {
             svgPath  : targetSVG,
             zoomLevel: 5,
-            scale    : 0.6,
+            scale    : 0.5,
             title    : "London theatre tower",
             latitude : 51.5002,
             longitude: -0.1262
@@ -46,7 +53,7 @@
           {
             svgPath  : targetSVG,
             zoomLevel: 5,
-            scale    : 0.6,
+            scale    : 0.5,
             title    : "Johnson & Johnson",
             latitude : 45.4235,
             longitude: -75.6979
@@ -54,7 +61,7 @@
           {
             svgPath  : targetSVG,
             zoomLevel: 5,
-            scale    : 0.6,
+            scale    : 0.5,
             title    : "Berlin Police",
             latitude : 52.5235,
             longitude: 13.4115
@@ -62,7 +69,7 @@
           {
             svgPath  : targetSVG,
             zoomLevel: 5,
-            scale    : 0.6,
+            scale    : 0.5,
             title    : "Los Angeles tower",
             latitude : 34.05,
             longitude: -118.24
@@ -70,18 +77,80 @@
           {
             svgPath  : targetSVG,
             zoomLevel: 5,
-            scale    : 0.6,
-            title    : "New York business center",
+            scale    : 0.8,
+            title    : "Bank of America",
             latitude : 40.71,
-            longitude: -74.00
+            longitude: -74.00,
+            rollOverColor: "#e85656",
+            selectedColor: "#e85656",
+            color: "#af1717"
           },
           {
             svgPath  : targetSVG,
             zoomLevel: 5,
-            scale    : 0.6,
+            scale    : 0.8,
             title    : "Paris hotel",
             latitude : 48.8567,
-            longitude: 2.3510
+            longitude: 2.3510,
+            rollOverColor: "#e85656",
+            selectedColor: "#e85656",
+            color: "#af1717"
+          }, {
+            svgPath: targetSVG,
+            zoomLevel: 5,
+            scale: 0.5,
+            title: "Vienna Tower",
+            latitude: 48.2092,
+            longitude: 16.3728
+          }, {
+            svgPath: targetSVG,
+            zoomLevel: 5,
+            scale: 0.5,
+            title: "Sofia Business Center",
+            latitude: 42.7105,
+            longitude: 23.3238
+          }, {
+            svgPath: targetSVG,
+            zoomLevel: 5,
+            scale: 0.5,
+            title: "Athens Embassy",
+            latitude: 37.9792,
+            longitude: 23.7166
+          }, {
+            svgPath: targetSVG,
+            zoomLevel: 5,
+            scale: 0.5,
+            title: "Dublin Tower",
+            latitude: 53.3441,
+            longitude: -6.2675
+          }, {
+            svgPath: targetSVG,
+            zoomLevel: 5,
+            scale: 0.5,
+            title: "Rome Chruch",
+            latitude: 41.8955,
+            longitude: 12.4823
+          }, {
+            svgPath: targetSVG,
+            zoomLevel: 5,
+            scale: 0.5,
+            title: "Luxembourg Bank",
+            latitude: 49.6100,
+            longitude: 6.1296
+          }, {
+            svgPath: targetSVG,
+            zoomLevel: 5,
+            scale: 0.5,
+            title: "Amsterdam Trading Center",
+            latitude: 52.3738,
+            longitude: 4.8910
+          }, {
+            svgPath: targetSVG,
+            zoomLevel: 5,
+            scale: 0.5,
+            title: "Jerusalem US Embassy",
+            latitude: 31.76,
+            longitude: 35.17
           }]
       },
       areasSettings: {
@@ -97,5 +166,6 @@
       },
       pathToImages : layoutPaths.images.amChart
     });
+
   }
 })();

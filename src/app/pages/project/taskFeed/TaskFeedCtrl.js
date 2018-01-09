@@ -12,35 +12,35 @@
   function TaskFeedCtrl($scope) {
     $scope.feed = [
       {
-        type    : 'error',
-        text    : 'Reinforcement delay risk completion of daily tasks.',
-        time    : '11:10',
-        icon    : 'ion-nuclear',
+        type    : 'info',
+        text    : 'Reinforcement back on track.',
+        time    : '10:42',
+        icon    : 'ion-information',
       }, {
         type    : 'warning',
-        text    : 'Iron truck waiting for over 2 hours.',
-        time    : '11:05',
-        icon    : 'ion-alert-circled',
+        text    : 'Reinforcement delay - concrete pour at risk.',
+        time    : '10:17',
+        icon    : 'ion-alert',
       }, {
-        type    : 'info',
-        text    : 'Reinforcement 11 completed.',
-        time    : '10:34',
-        icon    : 'ion-information-circled',
-      }, {
-        type    : 'info',
-        text    : 'Framework 2 completed.',
-        time    : '9:03',
-        icon    : 'ion-information-circled',
+        type    : 'success',
+        text    : 'Framework stripping completed.',
+        time    : '9:57',
+        icon    : 'ion-checkmark-round',
       }, {
         type    : 'error',
-        text    : 'Workers without helmets.',
-        time    : '8:25',
+        text    : 'Crane load fall.',
+        time    : '9:28',
         icon    : 'ion-nuclear',
       }, {
-        type    : 'warning',
-        text    : 'Concrete delivery delayed',
+        type    : 'info',
+        text    : 'Framework started on floor 16.',
+        time    : '8:52',
+        icon    : 'ion-information',
+      }, {
+        type    : 'info',
+        text    : 'Framework stripping have started',
         time    : '8:07',
-        icon    : 'ion-alert-circled',
+        icon    : 'ion-information',
       }
     ];
 

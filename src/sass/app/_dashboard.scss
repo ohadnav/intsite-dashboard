@@ -48,6 +48,10 @@ task-feed {
       .error {
         color: $danger;
       }
+
+      .success {
+        color: $success;
+      }
     }
 
     .post-time {

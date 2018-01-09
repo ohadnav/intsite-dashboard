@@ -16,7 +16,7 @@
         templateUrl: 'app/pages/project/project.html',
         title      : 'Project',
         sidebarMeta: {
-          icon : 'ion-settings',
+          icon : 'fa fa-building-o',
           order: 0,
         },
       });

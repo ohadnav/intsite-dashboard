@@ -24,20 +24,20 @@
         {
           task: 'Reinforcement',
           taskColor: '#F4D03F',
-          completed: 45,
-          remainder: 55
+          completed: 20,
+          remainder: 80
         },
         {
           task: 'Concrete',
-          taskColor: '#F1948A',
-          completed: 15,
-          remainder: 85
+          taskColor: '#CD6155',
+          completed: 0,
+          remainder: 100
         },
         {
-          task: 'Stripping',
-          taskColor: '#CD6155',
-          completed: 5,
-          remainder: 95
+          task: 'Framework Stripping',
+          taskColor: '#28B463',
+          completed: 100,
+          remainder: 0
         }
       ],
       graphs       : [

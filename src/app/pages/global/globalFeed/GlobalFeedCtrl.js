@@ -16,7 +16,7 @@
         site: 'new-york',
         displayName: 'Bank of America HQ',
         header: 'Resource delay',
-        text: 'Concrete delivery was delayed in two weeks.',
+        text: 'Safety level is low.',
         time: 'Today 11:55 pm',
         ago: '25 minutes ago',
         expanded: false,
